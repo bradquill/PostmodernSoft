@@ -12,4 +12,4 @@
   <a href="byRank.php" class="button"> Sort by Rank</a>
   <a href="byYear.php" class="button"> Sort by Year</a>
   
-  </body>
+  
