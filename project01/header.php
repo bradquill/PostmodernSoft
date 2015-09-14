@@ -26,12 +26,17 @@
 
 	<form method="POST" action="topAlbums.php">
 		<input type="submit" onclick="replaceList(); return false;">
+		Ordered by
+    <select name="sortOrder">
+      <option <? if ($sortOrder == "rank") { ?>selected="selected"<? } ?> value="rank">Rank</option>
+      <option <? if ($sortOrder == "year") { ?>selected="selected"<? } ?>value="year">Year</option>
+      <option <? if ($sortOrder == "title") { ?>selected="selected"<? } ?>value="title">Title</option>
+    </select>
+    <input type="submit" value="Sort this!" />
 	</form>
-<body>
+
   <h1>Top 100 Albums of All Time</h1>
   <h2>At least, according to someone.</h2>
-  <a href="byTitle.php" class="button"> Sort by Title</a>
-  <a href="byRank.php" class="button"> Sort by Rank</a>
-  <a href="byYear.php" class="button"> Sort by Year</a>
+  
   
   
